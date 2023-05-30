@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+:root {
+    --blue : #0044ff;
+    --dark-text :  #002b37;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.heavy-font{
+    font-family: 'Montserrat' ;
+}
+.text-blue{
+    color: var(--blue);
+}
+.text-black{
+    color: var(--dark-text);
+}
+.hero div h1{
+    font-weight: bolder;
+}
+.sticky{
+    background: white;
+}
+form{
+    display: flex;
+    box-shadow: 0 0 15px 2px rgba(0,0,0,0.2);
+    width:auto;
+    background: transparent;
+    border-radius: 50px ;
+    padding: 0px;
+}
+form div input{
+    border: none;
+    background: transparent;
+    padding: 25px;
+}
+form #input{
+    width: 80%;
+}
+input[type='email']{
+    width: 100%;
+    border-radius: 50px;
+}
+input[type='submit']{
+    width: 100%;
+    border-radius: 50px;
+    color: white;
+}
+input[type='email']:focus{
+    outline: none;
+    border: 0px;
+}
+form #btn{
+    background: black;
+    color: white !important;
+    border-radius: 50px;
+    width: 40%;
+}
+.point p{
+    background-color: var(--blue);
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.point{
+    position: relative;
+}
+.point::after{
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: rgb(224, 224, 224);
+    position: absolute;
+    right: 16px;
+    top: 0;
+    z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* individual page */
+.backG{
+    background: url('https://images.ctfassets.net/k0lk9kiuza3o/41lq28noewrKzn6B9AXh1I/636e53047ab81e34ee6862ff822448f5/Calendly_CTA_bg__1_.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    background-attachment: fixed;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul{
+    padding: 0px;
 }
-
-.App-link {
-  color: #61dafb;
+ul li{
+    list-style: none;
+    margin: 1.5rem 0px;
+    color: #002b37;
+    font-size: medium;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.spacer{
+    margin: 5rem auto !important;
 }
